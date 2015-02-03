@@ -1,0 +1,27 @@
+!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+	<meta name="keywords" content="<%=  keywords  %>">
+	<meta name="description" content="<%=  description  %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  <script src="/static/lib/tiny_mce/tiny_mce_src.js" type="text/javascript" charset="utf-8"></script>
+    <div id="main">
+
+        <%= render :image => 'main_image', :default => "/templates/step_by_step_guide/img/1.gif", :width => 800, :height => 200..800, :html => { :class => "hero_image" } %>
+
+        <div class="editable_text">
+			<%= render :textual => 'bodycopy', :type => :multi, :default => "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>" %>
+
+		</div>
+    </div>
+
+
+
+
+  </div></div></body>
